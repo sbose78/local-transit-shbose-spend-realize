@@ -1,5 +1,6 @@
 bases:
 - components/1-nodejs/base
 - components/basic-go/base
+- components/good-old-quarkus/base
 resources:
 - common-storage-pvc.yaml
