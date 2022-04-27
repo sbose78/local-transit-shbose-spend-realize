@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  annotations:
+    build.appstudio.openshift.io/application: local-transit
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/component: basic-go
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: elbasic-go
+  namespace: shbose
+spec:
+  path: /
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: el-basic-go
+    weight: null
+status: {}

@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: basic-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: basic-go
+    app.kubernetes.io/part-of: local-transit
+  name: basic-go
+  namespace: shbose
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: basic-go
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app.kubernetes.io/instance: basic-go
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload:shbose-basic-go
+        imagePullPolicy: Always
+        name: container-image
+        resources: {}
+status: {}
