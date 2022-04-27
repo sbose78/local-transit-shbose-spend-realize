@@ -1,4 +1,5 @@
 bases:
+- components/1-nodejs/base
 - components/basic-go/base
 resources:
 - common-storage-pvc.yaml
