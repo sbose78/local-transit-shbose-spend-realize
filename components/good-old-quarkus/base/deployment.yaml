@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: good-old-quarkus
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:shbose-good-old-quarkus
+      - image: quay.io/redhat-appstudio/user-workload@sha256:a3ebfdaa5e8eac2d3e8c7c8107e3af0b60c49c145c58294c499c56eda6b43e66
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
