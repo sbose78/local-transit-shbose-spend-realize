@@ -1,6 +1,7 @@
 bases:
 - components/1-nodejs/base
 - components/2-nodejs/base
+- components/3-nodejs/base
 - components/basic-go/base
 - components/good-old-quarkus/base
 resources:

@@ -1,0 +1,5 @@
+resources:
+- .tekton/
+- deployment.yaml
+- route.yaml
+- service.yaml
